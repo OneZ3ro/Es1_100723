@@ -100,6 +100,13 @@ console.log(
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+const arr1 = ["EPICODE", "is", "great"];
+const function7 = () => {
+  const arr_mapped = arr1.map((str) => str.length);
+  return arr_mapped;
+};
+console.log("----------------- Esercizio 7 -----------------\n", function7());
+
 //___________________________________________________________________________________________
 
 /* ESERCIZIO 8 (forEach o for)
