@@ -304,6 +304,15 @@ console.log(
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+const function11 = () => {
+  const movie_name = movies.map((item) => item.Title);
+  return movie_name;
+};
+console.log(
+  "----------------- Esercizio 11 -----------------\nNomi dei film:",
+  function11()
+);
+
 //___________________________________________________________________________________________
 
 /* ESERCIZIO 12 (filter)
