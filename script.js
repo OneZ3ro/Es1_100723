@@ -253,6 +253,20 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+const function9 = () => {
+  let year_min = 2023;
+  movies.forEach((item) => {
+    if (item.Year < year_min) {
+      year_min = item.Year;
+    }
+  });
+  return year_min;
+};
+console.log(
+  "----------------- Esercizio 9 -----------------\nIl film più vecchio è del:",
+  function9()
+);
+
 //___________________________________________________________________________________________
 
 /* ESERCIZIO 10
