@@ -340,6 +340,15 @@ console.log(
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
+const function14 = (par) => {
+  const movie_found = movies.find((item) => item.imdbID === par);
+  return movie_found;
+};
+console.log(
+  "----------------- Esercizio 14 -----------------\nIl film da te cercato è:",
+  function14("tt0167261")
+);
+
 //___________________________________________________________________________________________
 
 /* ESERCIZIO 15 (findIndex)
