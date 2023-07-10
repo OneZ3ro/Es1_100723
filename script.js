@@ -77,12 +77,12 @@ console.log(
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+
 const function5 = () => {
   const total = 0;
   const somma = Arr_random_num.reduce((num1, num2) => num1 + num2, total);
   return somma;
 };
-
 console.log(
   "----------------- Esercizio 5 -----------------\nSomma Array (reduce) es1:",
   function5()
@@ -343,6 +343,21 @@ console.log(
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+
+const function13 = () => {
+  const initialValue = 0;
+  const arr_movies_year = [];
+  movies.forEach((item) => arr_movies_year.push(Number(item.Year)));
+  const somma = arr_movies_year.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    initialValue
+  );
+  return somma;
+};
+console.log(
+  "----------------- Esercizio 13 -----------------\nSomma anni di uscita film (reduce):",
+  function13()
+);
 
 //___________________________________________________________________________________________
 
