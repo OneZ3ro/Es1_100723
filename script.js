@@ -273,6 +273,31 @@ console.log(
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
+const function10 = () => {
+  let conta = 0;
+  // con il for
+  // for (let i = 0; i < movies.length; i++) {
+  //   switch (movies[i].Type) {
+  //     case "movie":
+  //       conta++;
+  //       break;
+  //   }
+  // }
+
+  // con forEach
+  movies.forEach((item) => {
+    switch (item.Type) {
+      case "movie":
+        conta++;
+        break;
+    }
+  });
+  return conta;
+};
+console.log(
+  `----------------- Esercizio 10 -----------------\nNell'Array ci sono ${function10()} film`
+);
+
 //___________________________________________________________________________________________
 
 /* ESERCIZIO 11 (map)
