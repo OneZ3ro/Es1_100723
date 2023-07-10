@@ -381,7 +381,7 @@ console.log(
 */
 
 const function15 = (par) => {
-  const movie_index = (item) => item.Year >= par;
+  const movie_index = (item) => parseInt(item.Year) >= par;
   return movie_index;
 };
 console.log(
