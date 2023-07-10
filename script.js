@@ -60,6 +60,18 @@ console.log("----------------- Esercizio 3 -----------------\n", function3());
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+const function4 = () => {
+  let total = 0;
+  Arr_random_num.forEach((num) => {
+    total += num;
+  });
+  return total;
+};
+console.log(
+  "----------------- Esercizio 4 -----------------\nSomma Array es1:",
+  function4()
+);
+
 //___________________________________________________________________________________________
 
 /* ESERCIZIO 5 (reduce)
