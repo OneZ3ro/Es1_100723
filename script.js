@@ -330,7 +330,7 @@ console.log(
 */
 
 const function12 = () => {
-  const movie_mill_att = movies.filter((iteam) => iteam.Year >= 2000);
+  const movie_mill_att = movies.filter((iteam) => parseInt(iteam.Year) >= 2000);
   return movie_mill_att;
 };
 console.log(
