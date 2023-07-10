@@ -19,6 +19,7 @@ const function1 = (par1, par2) => {
   return result;
 };
 console.log(
+  "----------------- Esercizio 1 -----------------\n",
   function1(
     "Si sta come d'autunno sugli alberi le foglie",
     "Mi illumino d'immenso"
@@ -31,22 +32,27 @@ console.log(
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 
+const Arr_random_num = [];
 const function2 = () => {
-  const arr1 = [];
   for (let i = 0; i < 10; i++) {
     let random_num = Math.floor(Math.random() * 101);
-    arr1.push(random_num);
+    Arr_random_num.push(random_num);
   }
-  return arr1;
+  return Arr_random_num;
 };
-
-console.log(function2());
+console.log("----------------- Esercizio 2 -----------------\n", function2());
 
 //___________________________________________________________________________________________
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
+
+const function3 = () => {
+  const Arr_num_pari = Arr_random_num.filter((num) => num % 2 === 0);
+  return Arr_num_pari;
+};
+console.log("----------------- Esercizio 3 -----------------\n", function3());
 
 //___________________________________________________________________________________________
 
