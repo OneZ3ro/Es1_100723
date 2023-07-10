@@ -319,6 +319,15 @@ console.log(
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
+const function12 = () => {
+  const movie_mill_att = movies.filter((iteam) => iteam.Year >= 2000);
+  return movie_mill_att;
+};
+console.log(
+  "----------------- Esercizio 12 -----------------\nFilm del millennio:",
+  function12()
+);
+
 //___________________________________________________________________________________________
 
 /* ESERCIZIO 13 (reduce)
