@@ -113,6 +113,24 @@ console.log("----------------- Esercizio 7 -----------------\n", function7());
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
+const Arr_num_0_100 = [];
+for (let i = 0; i < 100; i++) {
+  Arr_num_0_100.push(i);
+}
+
+const Arr_num_dispari = [];
+const function8 = () => {
+  Arr_num_0_100.forEach((num) => {
+    if (num % 2 !== 0) {
+      Arr_num_dispari.push(num);
+    }
+  });
+  return Arr_num_dispari;
+};
+console.log("----------------- Esercizio 8 -----------------\n", function8());
+
+//___________________________________________________________________________________________
+
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
