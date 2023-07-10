@@ -68,7 +68,7 @@ const function4 = () => {
   return total;
 };
 console.log(
-  "----------------- Esercizio 4 -----------------\nSomma Array es1:",
+  "----------------- Esercizio 4 -----------------\nSomma Array (forEach) es1:",
   function4()
 );
 
@@ -77,6 +77,16 @@ console.log(
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+const function5 = () => {
+  const total = 0;
+  const somma = Arr_random_num.reduce((num1, num2) => num1 + num2, total);
+  return somma;
+};
+
+console.log(
+  "----------------- Esercizio 5 -----------------\nSomma Array (reduce) es1:",
+  function5()
+);
 
 //___________________________________________________________________________________________
 
