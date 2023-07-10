@@ -354,3 +354,14 @@ console.log(
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+const function15 = (par) => {
+  const movie_index = (item) => item.Year >= par;
+  return movie_index;
+};
+console.log(
+  "----------------- Esercizio 15 -----------------\nIl primo film di quell'anno è:",
+  movies.findIndex(function15(2009))
+);
+
+//___________________________________________________________________________________________
